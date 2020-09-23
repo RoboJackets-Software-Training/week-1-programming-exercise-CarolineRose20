@@ -55,7 +55,7 @@ int main() {
     double sum = 0;
     for(int j = 0; j < w.size(); j++) {
       if(i - pack_size + j >= 0 && i - pack_size + j < x.size()) {
-        accumulator += x[i - pack_size + j]*w[j];
+        sum += x[i - pack_size + j]*w[j];
       } else if(!pack_with_zeros && i - pack_size + j < 0) {
         sum += x[0] * w[j];
       } else if(!pack_with_zeros && i - pack_size + j >= x.size()) {
