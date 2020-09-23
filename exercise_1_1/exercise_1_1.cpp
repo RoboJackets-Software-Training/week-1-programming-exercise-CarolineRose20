@@ -10,8 +10,8 @@ int main() {
 
     // Write your code for step 2 here
     wheel_speeds[0] = 0;
-    wheel_speeds[2] = 0;
     wheel_speeds[1] = 0;
+    wheel_speeds[2] = 0;
     wheel_speeds[3] = 0;
    
     // Do not edit the next 5 lines
@@ -27,8 +27,8 @@ int main() {
             }
         }
         else if ('a' == direction) {
-            wheel_speeds[0] = .5;
-            wheel_speeds[2] = .5;
+            wheel_speeds[0] = 0.5;
+            wheel_speeds[2] = 0.5;
             wheel_speeds[1] = 1;
             wheel_speeds[3] = 1;
         }
@@ -38,8 +38,8 @@ int main() {
             }
         }
         else if ('d' == direction) {
-            wheel_speeds[1] = .5;
-            wheel_speeds[3] = .5;
+            wheel_speeds[1] = 0.5;
+            wheel_speeds[3] = 0.5;
             wheel_speeds[0] = 1;
             wheel_speeds[2] = 1;
         }
@@ -47,7 +47,7 @@ int main() {
             for (int i = 0; i <= 3; i++) {
                 wheel_speeds[i] = 0;
             }
-            std::cout << "Shutting Down" << std::endl;
+            std::cout << "Shutting down" << std::endl;
             keep_going = false;
         }
         else {
@@ -55,7 +55,7 @@ int main() {
         }
 
         for (int i = 0; i <= 3; i++) {
-                std::cout << "Wheel at index " << i << " has speed " << wheel_speeds[i] << std::endl;            }
+                std::cout << "wheel at index " << i << " has speed " << wheel_speeds[i] << std::endl;            }
         //
     }
 
