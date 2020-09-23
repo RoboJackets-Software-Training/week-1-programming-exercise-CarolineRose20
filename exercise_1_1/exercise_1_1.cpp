@@ -14,7 +14,7 @@ int main() {
     wheel_speeds[2] = 0;
     wheel_speeds[3] = 0;
    
-    // Do not edit the next 5 lines
+    // Do not edit the next 5 lines  
     bool keep_going = true;
     char direction;
 
